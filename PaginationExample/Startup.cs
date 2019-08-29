@@ -17,6 +17,7 @@ namespace PaginationExample
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Data.StudentContext.InitData(500);//Add this line to create 500 students
         }
 
         public IConfiguration Configuration { get; }
